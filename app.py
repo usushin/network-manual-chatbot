@@ -9,7 +9,7 @@ load_dotenv()
 
 # ページ設定
 st.set_page_config(
-    page_title="ネットワーク機器マニュアル チャットボット",
+    page_title="ネットワーク製品 Knowledge Database",
     page_icon="🌐",
     layout="wide"
 )
@@ -23,7 +23,7 @@ if "vectorstore_loaded" not in st.session_state:
     st.session_state.vectorstore_loaded = False
 
 # タイトル
-st.title("🌐 ネットワーク機器マニュアル チャットボット")
+st.title("🌐 ネットワーク製品 Knowledge Database")
 st.markdown("CISCO等のネットワーク機器に関する技術的な質問にお答えします。")
 
 # サイドバー
@@ -97,8 +97,6 @@ with st.sidebar:
 # メインコンテンツ
 if not api_key:
     st.warning("⚠️ Groq APIキーを入力してください。無料で取得できます: https://console.groq.com/keys")
-    # テスト用：一時的にAPIキーなしでも進められるようにする
-    st.info("💡 テスト用：APIキーなしでもPDF処理までは可能です")
 elif not st.session_state.vectorstore_loaded:
     st.info("📄 サイドバーからPDFマニュアルをアップロードするか、保存済みデータを読み込んでください。")
 else:
@@ -144,7 +142,7 @@ st.divider()
 st.markdown(
     """
     <div style='text-align: center'>
-        <small>技術サポートチャットボット v1.0 | Powered by LangChain & Groq (Llama 3)</small>
+        <small>ネットワーク製品 Knowledge Database v1.0 | Powered by LangChain & Groq (Llama 3)</small>
     </div>
     """,
     unsafe_allow_html=True
