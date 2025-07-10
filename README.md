@@ -1,6 +1,6 @@
 # 🌐 ネットワーク製品 Knowledge Database
 
-**CISCO等のネットワーク機器の技術マニュアルに基づいて質問に回答するRAG（Retrieval-Augmented Generation）システム**
+**ネットワーク機器の技術マニュアルに基づいて質問に回答するRAG（Retrieval-Augmented Generation）システム**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-red.svg)](https://streamlit.io)
