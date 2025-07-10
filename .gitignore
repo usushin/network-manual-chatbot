@@ -22,6 +22,9 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+__pycache__/
+*.pyc
+venv/
 
 # Environment files
 .env
@@ -30,6 +33,12 @@ wheels/
 # Data directories
 data/manuals/*.pdf
 data/vectorstore/
+data/cache/
+
+# ログファイル
+logs/
+*.log
+
 
 # IDE
 .vscode/
@@ -46,3 +55,9 @@ Thumbs.db
 
 # Streamlit
 .streamlit/secrets.toml
+
+# 一時ファイル
+*.tmp
+*.bak
+*.backup
+

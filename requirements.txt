@@ -22,5 +22,9 @@ tiktoken>=0.5.0
 pandas>=2.0.0
 numpy>=1.24.0
 
+# System monitoring (新規追加)
+psutil>=5.9.0
+
 # Optional: For better PDF processing
 # unstructured>=0.10.0
+
